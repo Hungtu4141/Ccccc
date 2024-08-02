@@ -1,2 +1,2 @@
-404.Không Tìm thấy
-t
+
+game.Players.LocalPlayer:Kick("Tính ăn cắp của ah à vũ béo")
