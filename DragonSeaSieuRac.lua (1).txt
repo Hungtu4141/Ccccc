@@ -468,17 +468,7 @@ page1_4:Toggle('Killaura Raid',false,function(value)
 end)
 
 page1_4:Toggle('Auto Boss Raid',false,function(value)
-getgenv().flly = value
     CC = value
-    if getgenv().flly then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/random/main/bypassedfly.lua"))()
-		else
-			for i, v in next, workspace:GetChildren() do
-				if v.IsA(v, "BasePart") and v.Name ~= "Terrain" then
-					v:Destroy()
-				end
-			end
-		end
 end)
 
 page1_4:Button('Teleport to Raid',function()
