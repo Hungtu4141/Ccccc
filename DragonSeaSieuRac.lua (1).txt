@@ -298,7 +298,7 @@ page2:Dropdown("Select Method Farm",{"Normal","Fast"},"Normal",function(a)
     Method = a
 end)
 
-page2:Slider("Distance Farm",true,0,100,1,function(value)
+page2:Slider("Distance Farm",true,0,100,7,function(value)
     DistanceMob = value
 end)
 
@@ -534,7 +534,7 @@ spawn(function()
                                             else
                                                 Click()   
                                             end
-                                            TP(x.HumanoidRootPart.CFrame * CFrame.new(0,8,DistanceMob))
+                                            TP(x.HumanoidRootPart.CFrame * CFrame.new(0,7,DistanceMob))
                                         until x:FindFirstChild("Humanoid").Health <= 0 or not Farm or not x.Parent or game:GetService("Players").LocalPlayer.Quest.Num.Value == 0
                                     end
                                 else
@@ -549,7 +549,7 @@ spawn(function()
                                                 else
                                                     Click()   
                                                 end
-                                                TP(x.HumanoidRootPart.CFrame * CFrame.new(0,9,DistanceMob))
+                                                TP(x.HumanoidRootPart.CFrame * CFrame.new(0,7,DistanceMob))
                                             until x:FindFirstChild("Humanoid").Health <= 0 or not Farm or not x.Parent or game:GetService("Players").LocalPlayer.Quest.Num.Value == 0
                                         end
                                     end
@@ -566,7 +566,7 @@ spawn(function()
                                             else
                                                 Click()   
                                             end
-                                            TP(x.HumanoidRootPart.CFrame * CFrame.new(0,9,DistanceMob))
+                                            TP(x.HumanoidRootPart.CFrame * CFrame.new(0,7,DistanceMob))
                                         until x:FindFirstChild("Humanoid").Health <= 0 or not Farm or not x.Parent or game:GetService("Players").LocalPlayer.Quest.Num.Value == 0
                                     end
                                 end
